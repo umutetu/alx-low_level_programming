@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _struct -  concatenates two strings.
+ * _strcat -concatenates two strings by @src.
  * @dest: input value
  * @src: input value
  *
@@ -9,22 +9,14 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int d;
-	int s;
+	int d = 0;
+	int s = 0;
 
 	d = 0;
-	while (dest[d] != '\0')
-	{
-		d++;
-	}
-	s = 0;
-	while (src[s] != '\0')
-	{
-		dest[d] = src[s];
-		d++;
+	while (dest[d++])
 		s++;
-	}
-		dest[d] = '\0';
-		return (dest);
-}
 
+	for (d = 0; src[d]; d++)
+		dest[s] = src[d];
+	return (dest);
+}
