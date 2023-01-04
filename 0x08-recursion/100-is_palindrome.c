@@ -29,7 +29,6 @@ int is_prime_number(int n)
  * @i: divisor of n.
  * Return: if it is prime 1 otherwise 0.
  */
-
 int is_prime_man(int n, int i)
 
 {

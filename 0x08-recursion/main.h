@@ -15,4 +15,5 @@ int is_prime_number(int n);
 int sqrt_number(int n, int i);
 int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
+int is_prime_man(int n, int i);
 #endif
