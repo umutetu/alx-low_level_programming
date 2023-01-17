@@ -3,7 +3,7 @@
 
 /**
  * print_dog - prints a struct dog.
- * @d: The struct dog to be print.
+ * @d: struct dog.
  *
  * Return: no return.
  */
@@ -23,3 +23,4 @@ void print_dog(struct dog *d)
 		else
 			printf("Owner: %s\n", d->owner);
 	}
+}
